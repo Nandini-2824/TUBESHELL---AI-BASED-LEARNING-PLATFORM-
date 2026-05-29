@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes - TubeShell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-wrap">
+    <div class="page-card">
+      <h1>📘 AI Notes</h1>
+
+      <section class="content-box">
+        <h2>Summary</h2>
+        <div id="summary"></div>
+      </section>
+
+      <section class="content-box">
+        <h2>Detailed Notes</h2>
+        <div id="notes"></div>
+      </section>
+
+      <div class="actions">
+        <button class="primary-btn" onclick="goQuiz()">Go to Quiz</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    loadNotes();
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcards - TubeShell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-wrap">
+    <div class="page-card">
+      <h1>🧠 Flashcards</h1>
+
+      <p id="flashProgress" class="flash-progress"></p>
+
+      <div class="flashcard-shell">
+        <div class="flashcard" id="flashcard" onclick="flipCard()">
+          <div id="flashcardText">Loading...</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="secondary-btn" onclick="prevCard()">Prev</button>
+        <button class="secondary-btn" onclick="nextCard()">Next</button>
+      </div>
+
+      <div class="actions">
+        <button class="primary-btn" onclick="goDashboard()">Mark as Completed</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    initFlashcards();
+  </script>
+</body>
+</html>

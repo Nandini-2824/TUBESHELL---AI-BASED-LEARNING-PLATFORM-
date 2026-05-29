@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TubeShell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">TubeShell 🎓</div>
+    <button class="nav-btn" onclick="goDashboard()">Dashboard</button>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-card">
+      <h1>Turn YouTube Videos into Study Material</h1>
+      <p>Notes • Quiz • Flashcards • Dashboard</p>
+
+      <input id="ytlink" type="text" placeholder="Paste YouTube link (optional)" />
+      <textarea id="transcript" placeholder="Paste transcript here"></textarea>
+
+      <button id="generateBtn" class="primary-btn" onclick="generate()">Generate</button>
+      <p id="status" class="status-text"></p>
+      <div id="loader" class="loader hidden"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0b0f19;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-btn,
+.primary-btn,
+.secondary-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.nav-btn,
+.primary-btn {
+  background: #22d3ee;
+  color: #0b0f19;
+}
+
+.secondary-btn {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.nav-btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.hero,
+.page-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.hero-card,
+.page-card {
+  width: 100%;
+  max-width: 900px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero-card {
+  text-align: center;
+}
+
+.hero-card h1,
+.page-card h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 34px;
+}
+
+.hero-card p {
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: #0f172a;
+  color: #ffffff;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+
+.status-text {
+  margin-top: 14px;
+  color: #cbd5e1;
+}
+
+.content-box {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.content-box h2 {
+  margin-top: 0;
+  color: #22d3ee;
+}
+
+#summary,
+#notes {
+  line-height: 1.8;
+  color: #e5e7eb;
+}
+
+#notes h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #22d3ee;
+}
+
+#notes ul {
+  padding-left: 22px;
+  margin: 8px 0 16px;
+}
+
+#notes li {
+  margin-bottom: 8px;
+}
+
+#notes p {
+  margin-bottom: 12px;
+}
+
+#notes strong {
+  color: #ffffff;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.quiz-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.quiz-question {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quiz-option {
+  width: 100%;
+  text-align: left;
+  background: #1e293b;
+  color: #ffffff;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.quiz-option:hover {
+  background: #334155;
+}
+
+.correct {
+  background: #166534 !important;
+  border-color: #22c55e !important;
+}
+
+.wrong {
+  background: #991b1b !important;
+  border-color: #ef4444 !important;
+}
+
+.flash-progress {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.flashcard-shell {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.flashcard {
+  width: 360px;
+  min-height: 220px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border: 1px solid #334155;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.status-box {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#overall {
+  text-align: center;
+  margin-top: 28px;
+  color: #22d3ee;
+}
+
+.loader {
+  border: 4px solid #222;
+  border-top: 4px solid #00ffd5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
